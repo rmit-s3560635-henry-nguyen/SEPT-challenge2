@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Component
+
 public interface PersonDao extends JpaRepository<Person, Integer> {
 
 
