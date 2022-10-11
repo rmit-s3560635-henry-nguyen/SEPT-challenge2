@@ -13,10 +13,10 @@ public class PersonService {
     @Autowired
     private PersonDao dao;
 
-    public String addPerson(Person person) {
+    public Person addPerson(Person person) {
 
         dao.save(person);
-        return "Person added successfully";
+        return person;
     }
 
     public Person getPerson(int id) {
@@ -27,9 +27,9 @@ public class PersonService {
         return dao.findAll();
     }
 
-    public String updatePerson(Person person) {
+    public Person updatePerson(Person person) {
         dao.save(person);
-        return "Person updated successfully";
+        return person;
     }
 
     public String deletePerson(Person person) {
