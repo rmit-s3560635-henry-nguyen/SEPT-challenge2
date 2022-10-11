@@ -1,9 +1,8 @@
-package com.example.accountservice.controller;
+package com.example.personservice.controller;
 
-import com.example.accountservice.model.Account;
-import com.example.accountservice.service.AccountService;
+import com.example.personservice.model.Account;
+import com.example.personservice.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

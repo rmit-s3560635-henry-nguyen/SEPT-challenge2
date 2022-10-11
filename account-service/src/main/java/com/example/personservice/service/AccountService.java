@@ -1,7 +1,7 @@
-package com.example.accountservice.service;
+package com.example.personservice.service;
 
-import com.example.accountservice.dao.AccountDao;
-import com.example.accountservice.model.Account;
+import com.example.personservice.dao.AccountDao;
+import com.example.personservice.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

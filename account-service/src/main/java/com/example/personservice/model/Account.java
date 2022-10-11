@@ -1,4 +1,4 @@
-package com.example.accountservice.model;
+package com.example.personservice.model;
 
 import javax.persistence.*;
 
