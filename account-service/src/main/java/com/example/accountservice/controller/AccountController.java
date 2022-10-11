@@ -3,6 +3,7 @@ package com.example.accountservice.controller;
 import com.example.accountservice.model.Account;
 import com.example.accountservice.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +16,7 @@ public class AccountController {
     private AccountService accountService;
 
     @PostMapping("/account")
-    public String addAccount(@RequestBody Account account) {
+    public Account addAccount(@RequestBody Account account) {
         return accountService.addAccount(account);
     }
 
@@ -30,13 +31,14 @@ public class AccountController {
     }
 
     @PutMapping("/accounts/account")
-    public String updateAccount(@RequestBody Account account) {
+    public Account updateAccount(@RequestBody Account account) {
         return accountService.updateAccount(account);
     }
 
     @DeleteMapping("/accounts/account")
     public String deleteAccount(@RequestBody Account account) {
-        return accountService.deleteAccount(account);
+
+    return accountService.deleteAccount(account);
     }
 
 }

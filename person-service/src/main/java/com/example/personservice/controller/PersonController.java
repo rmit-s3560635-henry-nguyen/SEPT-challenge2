@@ -19,7 +19,7 @@ public class PersonController {
     private PersonService personService;
 
     @PostMapping("/person")
-    public String addPerson(@RequestBody  Person person) {
+    public Person addPerson(@RequestBody  Person person) {
         return personService.addPerson(person);
     }
 
@@ -34,7 +34,7 @@ public class PersonController {
     }
 
     @PutMapping("/persons/person")
-    public String updatePerson(@RequestBody Person person) {
+    public Person updatePerson(@RequestBody Person person) {
         return personService.updatePerson(person);
     }
 

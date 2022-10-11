@@ -16,10 +16,10 @@ public class AccountService {
 
     private Date date = new Date();
 
-    public String addAccount(Account account) {
+    public Account addAccount(Account account) {
         account.setDate(date.toString());
         dao.save(account);
-        return "Account added successfully";
+        return account;
     }
 
     public Account getAccount(int id) {
@@ -30,9 +30,9 @@ public class AccountService {
         return dao.findAll();
     }
 
-    public String updateAccount(Account account) {
+    public Account updateAccount(Account account) {
         dao.save(account);
-        return "Account updated successfully";
+        return account;
     }
 
     public String deleteAccount(Account account) {
